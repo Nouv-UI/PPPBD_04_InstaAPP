@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">InstaApp</string>
+    <string name="username">naufal.idn</string>
+    <string name="pict">profile picture</string>
+    <string name="nama">Muhammad Naufal Fitriarto</string>
+    <string name="jmlh_post">9</string>
+    <string name="post">postingan</string>
+    <string name="jmlh_follower">259</string>
+    <string name="follower">follower</string>
+    <string name="jmlh_following">240</string>
+    <string name="following">following</string>
+    <string name="bio">Halo nama saya Muhammad Naufal Fitriarto dari program studi Teknologi Rekayasa Perangkat Lunak angkatan 2025</string>
+    <string name="edit">edit profile</string>
+    <string name="share">share profile</string>
 </resources>
