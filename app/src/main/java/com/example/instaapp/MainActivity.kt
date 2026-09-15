@@ -44,5 +44,12 @@ class MainActivity : AppCompatActivity() {
             }
             editProfileLauncher.launch(intent)
         }
+
+        binding.imgProfile.setOnClickListener {
+            val intentToDetail = Intent(this, DetailProfileActivity::class.java).apply {
+                putExtra(DetailProfileActivity.EXTRA_NAME, binding.username.text.toString())
+            }
+            startActivity(intentToDetail)
+        }
     }
 }

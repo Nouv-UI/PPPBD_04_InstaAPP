@@ -5,16 +5,28 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.instaapp.databinding.ActivityDetailProfileBinding
 
 class DetailProfileActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityDetailProfileBinding
+
+    companion object {
+        const val EXTRA_NAME = "extra_name"
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_detail_profile)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivityDetailProfileBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // Tangkap data nama dari Intent
+        val name = intent.getStringExtra(EXTRA_NAME)
+        binding.detailName.text = name
+
+        binding.btnBack.setOnClickListener {
+            finish()
         }
     }
 }
