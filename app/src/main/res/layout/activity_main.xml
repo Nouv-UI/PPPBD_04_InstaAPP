@@ -124,6 +124,7 @@
             android:layout_marginTop="12dp">
 
             <TextView
+                android:id="@+id/bio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/bio"
@@ -139,6 +140,7 @@
             android:weightSum="2">
 
             <Button
+                android:id="@+id/btn_editProfile"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -146,6 +148,7 @@
                 android:text="@string/button_edit" />
 
             <Button
+                android:id="@+id/btn_shareProfile"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
