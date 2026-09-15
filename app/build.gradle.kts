@@ -3,6 +3,10 @@ plugins {
 }
 
 android {
+    buildFeatures {
+        viewBinding = true
+    }
+
     namespace = "com.example.instaapp"
     compileSdk {
         version = release(37)
