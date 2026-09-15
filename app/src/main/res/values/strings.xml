@@ -15,6 +15,7 @@
     <string name="button_edit">edit profile</string>
     <string name="button_share">share profile</string>
     <string name="button_save">Simpan Perubahan</string>
+    <string name="button_back">Kembali</string>
 
     <string name="hint_name">masukkan username baru</string>
     <string name="hint_bio">masukkan bio baru</string>
